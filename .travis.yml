@@ -20,6 +20,7 @@ addons:
     - texlive
     - texlive-latex-extra
     - dvipng
+    - qtbase5-dev
 
 env:
   global:

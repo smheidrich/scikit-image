@@ -10,9 +10,9 @@ if [[ "${QT}" == "PyQt5" ]]; then
         # PyQt 5.11 changed how they ship SIP
         # Which conflicts with how matplotlib detects the
         # presence of PyQt before MPL 2.2.3
-        pip install --retries 3 -q $PIP_FLAGS "pyqt5<5.11"
+        pip install --retries 3 -q $PIP_FLAGS "pyqt5"
     else
-        pip install --retries 3 -q $PIP_FLAGS "pyqt5!=5.12.0"
+        pip install --retries 3 -q $PIP_FLAGS "pyqt5"
     fi
     MPL_QT_API=PyQt5
     export QT_API=pyqt5
