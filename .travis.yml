@@ -6,6 +6,7 @@
 # See tools/travis/notes.txt for some guidelines
 
 language: python
+dist: xenial
 sudo: false
 cache:
   # See https://docs.travis-ci.com/user/caching/#pip-cache
